@@ -1,0 +1,34 @@
+This is a simple springboot program that models how a banking app would work. Users can log in, sign up;
+check their balance, withdraw and deposit money; convert funds between 5 currencies change password and username
+
+# Springboot is an enhanced version of spring as it comes preconfigured with dependencies such as Spring MVC
+Spring Security, Spring Data, a Web Server etc. Thereby making it far easier to create/deploy a web application.
+It is a more streamlined version of Spring and comes with a lot of built-in features
+
+## IoC Container
+Spring Boot allows you to configure how and when dependencies are provided to your application at runtime. This
+puts you in control of how your application operates in different scenarios. Inversion of control is often called
+Dependency Injection (DI) i.e. dependencies are "injected" into their applications at runtime.
+
+## TDD
+Test Driven Development is a tried-and-true technique to help application developers design simple yet robust
+software, plus guard against functionality regressions and bugs.
+
+## Apache Maven
+It manages programs by bundling all the necessary dependencies
+
+## Spring Boot Layers
+- Persistence: handles interaction with database (repository pattern or DAO's)
+- Service: all the functionality exposed by the persistence layer (calls must always go through here)
+- Presentation: it should never connect directly to the database
+
+The technique of separating the application into layers is called Separation of Concerns
+Connect the database to the persistence layer using JPA (Java Persistence API) or MongoDB. Generate the classes
+for the models, repositories, services and controllers with the help of lombok.
+- create the models first
+- then the repositories
+- then the services
+- then the controllers
+
+
+
