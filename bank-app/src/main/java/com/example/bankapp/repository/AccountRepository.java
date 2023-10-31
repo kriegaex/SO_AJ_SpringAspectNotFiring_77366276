@@ -1,16 +1,20 @@
 package com.example.bankapp.repository;
 
 import com.example.bankapp.model.Account;
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface AccountRepository extends MongoRepository<Account, ObjectId> {
+public class AccountRepository {
 
-    Optional<Account> findById(String accountId);
+    public Optional<Account> findById(String accountId) {
+        return Optional.empty();
+    }
 
 
+    public List<Account> findAll() {
+        return null;
+    }
 }
